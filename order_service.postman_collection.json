@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "order_service",
+		"_postman_id": "d8035238-a7fa-406f-35fd-b151da7c5d40",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get order by id",
+			"request": {
+				"url": "http://localhost:8080/orders/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tortilla\":\"corn\",\n\t\"protein\":\"bean\",\n\t\"salsa\":\"hot\",\n\t\"extras\":\"avocado\",\n\t\"vegetables\":\"corn\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save order",
+			"request": {
+				"url": "http://localhost:8080/orders",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tortilla\":\"corn\",\n\t\"protein\":\"bean\",\n\t\"salsa\":\"mild\",\n\t\"extras\":\"avocado\",\n\t\"vegetables\":\"corn,cabbage\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
